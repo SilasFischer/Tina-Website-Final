@@ -1,0 +1,150 @@
+body { 
+	margin: 0;
+	background-color: rgba(181, 207, 242, 100);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+h1 {
+	font-family: 'Vina Sans', cursive;
+	color: rgba(31, 68, 110, 1.0);
+	font-stretch: semi-expanded;
+}
+
+header {
+	grid-area: hd;
+	background-color: rgba(255, 179, 125, 100);
+	min-height: 100px;
+	align-items: center;
+}
+
+article {
+	grid-area: main;
+	padding: 10px 75px;
+	align-items: center;
+}
+
+aside {
+	grid-area: image;
+	display: grid;
+	place-items: center;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+
+footer {
+	grid-area: ft;
+	padding: 10px 75px;
+}
+
+.p-footer {
+	font-size: .6rem;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  margin: auto;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media screen and (max-width: 767px) {
+	.Home-grid {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+		"hd"
+		"main"
+		"image"
+		"ft";
+	}
+
+	.nav-bar {
+		color:;
+		text-decoration: none;
+		list-style: none;
+		margin: 0;
+		display:grid;
+		grid-template-columns: 1fr;
+		padding: 25px;
+		align-items: center;
+		justify-items: center;
+	}
+
+	.nav {
+		list-style: none;
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: center;
+		justify-items: center;
+	}
+
+	.nav a {
+		color:rgba(33, 33, 33, 100);
+		text-decoration: none;
+	}
+
+	.nav a:Hover {
+		text-decoration: none;
+		color: rgba(31, 68, 110, 100);
+		background-color: rgba(255, 251, 229, 100);
+		padding: 10px;
+		border-radius: 15px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.Home-grid {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: 4fr 3fr;
+		grid-template-areas:
+		"hd    hd"
+		"main  image"
+		"ft    ft";
+	}
+
+
+	.nav-bar {
+		color:;
+		text-decoration: none;
+		list-style: none;
+		margin: 0;
+		display:grid;
+		grid-template-columns: 2fr 3fr;
+		padding: 25px;
+	}
+
+	.nav {
+		list-style: none;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		align-items: center;
+		justify-items: center;
+	}
+
+	.nav a {
+		color:rgba(33, 33, 33, 100);
+		text-decoration: none;
+	}
+
+	.nav a:Hover {
+		text-decoration: none;
+		color: rgba(31, 68, 110, 100);
+		background-color: rgba(255, 251, 229, 100);
+		padding: 10px;
+		border-radius: 15px;
+	}
+}

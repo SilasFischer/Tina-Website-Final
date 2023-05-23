@@ -1,0 +1,121 @@
+body { 
+margin: 0;
+background-color: rgba(255, 251, 229, 100);
+font-family: 'Montserrat', sans-serif;
+font-size: 1rem;
+line-height: 1.5;
+}
+
+.Tina-Portrait-Grid {
+	display: grid;
+	grid-template-columns: 
+	minmax(50px, 3fr) minmax(50px, 3fr) minmax(50px, 1fr) minmax(50px, 3fr) minmax(50px, 3fr);
+	grid-template-rows: 
+	minmax(100px, 1fr) minmax(100px, 2fr) minmax(100px, 3fr) minmax(100px, 5fr);
+}
+
+.Hair-top {
+	grid-row: 1;
+	grid-column: 1 / -1;
+	background-color: rgba(33, 33, 33, 100);
+}
+
+.Hair-left {
+	grid-row: 2 / end;
+	grid-column: 1;
+	background-color: rgba(33, 33, 33, 100);
+}
+
+.Hair-left a:link {
+	color: rgba(33, 33, 33, 100);
+	background-color: rgba(249, 227, 100, 100);
+	border-radius: 30px;
+	text-decoration: none;
+	margin: 100px 0px 0px 100px;
+    padding: 15px;
+    display:flex;
+    justify-content: center;
+    transform: rotate(15deg);
+    transition: all 0.3s ease;
+    font-size: 1.18rem;
+}
+
+.Hair-left a:hover {
+	color: rgba(31, 68, 110, 100);
+	background-color: rgba(255, 251, 229, 100);
+	border-radius: 30px;
+	text-decoration: none;
+	margin: 100px 0px 0px 100px;
+    padding: 15px;
+    display:flex;
+    justify-content: center;
+    transform: rotate(0deg);
+    font-size: 1.18rem;
+    font-weight: 400;
+}
+
+.Hair-right {
+	grid-row: 2 / end;
+	grid-column: 5;
+	background-color: rgba(33, 33, 33, 100);
+}
+
+.Bangs-1 {
+	background-color: rgba(33, 33, 33, 100);
+	border-radius: 0px 0px 50px 50px;
+}
+
+.Bangs-2 {
+	background-color: rgba(33, 33, 33, 100);
+	border-radius: 0px 0px 50px 50px;
+}
+
+.Bangs-3 {
+	background-color: rgba(33, 33, 33, 100);
+	border-radius: 0px 0px 50px 50px;
+}
+
+.Glasses-left {
+	background-color: rgba(255, 251, 229, 100);
+	border-radius: 0px 0px 20px 20px;
+}
+
+.Glasses-center {
+	background-color: rgba(255, 251, 229, 100);
+	border-radius: 0px 0px 20px 20px;
+}
+
+.Glasses-right {
+	background-color: rgba(255, 251, 229, 100);
+	border-radius: 0px 0px 20px 20px;
+}
+
+.Frame-left {
+	background-color: rgba(255, 251, 229, 100);
+  	border: 25px solid rgba(33, 33, 33, 100);
+  	border-radius: 20px;
+	display: grid;
+	grid-template-columns: minmax(100px, 1fr);
+	grid-template-rows: minmax(200px, 1fr);
+	margin: 15px 0px 0px 15px;
+}
+
+.Frame-right {
+	background-color: rgba(255, 251, 229, 100);
+  	border: 25px solid rgba(33, 33, 33, 100);
+  	border-radius: 20px;
+	display: grid;
+	grid-template-columns: minmax(100px, 1fr);
+	grid-template-rows: minmax(200px, 1fr);
+	margin: 15px 15px 0px 0px;
+}
+
+.Frame-center {
+	background-color: rgba(33, 33, 33, 100);
+  	border-radius: 0px;
+	display: grid;
+	grid-template-columns: minmax(100px, 1fr);
+	grid-template-rows: minmax(50px, 1fr);
+	margin: 50px 0px 0px 0px;
+
+
